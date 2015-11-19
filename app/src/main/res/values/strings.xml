@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FlagRF</string>
+
+    <string name="hello_world">Привет мир!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_gimn">Гимн</string>
+</resources>
