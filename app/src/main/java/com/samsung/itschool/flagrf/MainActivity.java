@@ -18,20 +18,20 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickButton(View view) {
 
-        player_play();
+        playerPlayPause();
     }
     @Override
     public boolean onKeyDown(int keycode, KeyEvent e) {
         switch(keycode) {
             case KeyEvent.KEYCODE_MENU:
-                player_play();
+                playerPlayPause();
                 return true;
         }
 
         return super.onKeyDown(keycode, e);
     }
 
-    private void player_play() {
+    private void playerPlayPause() {
         if (mediaPlayer == null)
             mediaPlayer = MediaPlayer.create(this, R.raw.gimn);
         if (mediaPlayer.isPlaying()) {
